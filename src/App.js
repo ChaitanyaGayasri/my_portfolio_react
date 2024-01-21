@@ -1,0 +1,26 @@
+import React from "react"
+import "./index.css"
+import './App.css';
+import Home from "./routes/Home"
+import About from "./routes/About"
+import Contact from "./routes/Contact"
+import Project from "./routes/Project"
+import Experience from "./routes/experience"
+import { Route,Routes } from "react-router-dom";
+
+function App() {
+  return (
+   <>
+   <Routes>
+    <Route path="/" element={<Home/>}/>
+    <Route path="/about" element={<About/>}/>
+    <Route path = "/contact" element={<Contact/>}/>
+    <Route path ="/project" element={<Project/>}/>
+    <Route path ="/experience" element={<Experience/>}/>
+   </Routes>
+   
+   </>
+  );
+}
+
+export default App;

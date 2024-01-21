@@ -1,0 +1,151 @@
+.mask {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+}
+
+.intro-image{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+.mask::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.6;
+}
+.hero{
+    height: 100%;
+    width: 100%;
+    padding-top: 130px;
+}
+
+.hero .content{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 35%;
+    left: 50%;
+    text-align: center;
+}
+
+@media  screen and (max-width: 640px) {
+    .hero .content{
+        top: 30%;
+    }
+}
+
+.content h1{
+    padding: 40px;
+}
+
+@media screen and (max-width: 640px){
+    .content h1{
+        padding: 30px;
+    }
+}
+
+.hero .home-container {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 65%;
+    left: 50%;
+    text-align: center;
+  }
+
+  .home-container a {
+    padding: 16px 35px;
+    text-decoration: none;
+    border: rgba(255,101,01);
+    border-radius: 20px;
+    letter-spacing: 2px;
+    background-color: rgb(75, 18, 247);
+    
+  }
+
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    width: 90%;
+    max-width: 1110px;
+  }
+
+  
+  
+  @media screen and (min-width: 768px) {
+    .home-container {
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 300px;
+    }
+  }
+
+
+  .display {
+    display: flex;
+  }
+  
+  .home-content  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+@media screen and (max-width: 768px){
+  .home-heading {
+    padding-top: 150px;
+  }
+}
+  
+  @media screen and (min-width: 768px) {
+    .home-content {
+      align-items: flex-start;
+    }
+  }
+
+  .span{
+    color: #0967d2;
+  }
+  
+  .home-mobile-img {
+    width: 206px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .home-mobile-img {
+      display: none;
+    }
+  }
+  
+  .home-desktop-img {
+    width: 50%;
+    max-width: 200px;
+    margin-left: 85px;
+    border-radius: 15px;
+  }
+
+  @media screen and (max-width: 640px) {
+    .home-desktop-img {
+        padding-top: 10px;
+    }
+  }
+
+  
+
+h1{
+  font-weight: 800;
+  font-family: "Sans Serif";
+}  
+  
